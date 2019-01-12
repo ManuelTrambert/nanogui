@@ -54,8 +54,8 @@ public:
     const std::string &defaultValue() const { return mDefaultValue; }
     void setDefaultValue(const std::string &defaultValue) { mDefaultValue = defaultValue; }
     
-    const std::string &defaultValue() const { return mDefaultValue; }
-    void setDefaultValue(const std::string &defaultValue) { mDefaultValue = defaultValue; }
+    void setTempValue(const std::string &tempValue) { mValueTemp = tempValue; }
+    const std::string &tempValue() const { return mValueTemp; }
 
     Alignment alignment() const { return mAlignment; }
     void setAlignment(Alignment align) { mAlignment = align; }
