@@ -57,6 +57,8 @@ public:
     void setTempValue(const std::string &tempValue) { mValueTemp = tempValue; }
     const std::string &tempValue() const { return mValueTemp; }
 
+    void moveCursor(int pos) { mCursorPos += pos; }
+
     Alignment alignment() const { return mAlignment; }
     void setAlignment(Alignment align) { mAlignment = align; }
 
